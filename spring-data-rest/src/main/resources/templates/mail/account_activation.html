@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+</head>
+<body>
+	<div>
+		<div style="width: 100%; text-align: center; width: 100%; border-radius: 10px; overflow: hidden; height: initial; margin: 0 auto; margin-top: 50px; box-shadow: 4px 8px 40px 8px rgba(0, 4, 10, 0.2);">
+			<div style="text-align: center; width: 500px; margin: 0 auto;">
+				<div style="background: #000; text-align: center; padding: 12px 0;">
+					<img src="https://swapandstyle.com/wp-content/uploads/2022/06/cropped-sns-final-logo-03-e1654843697801.png" style="width: 90px;"/>
+				</div>
+				<div style="text-align: left; padding: 10px 20px 20px 20px;">
+					<h3 style="font-size: 55px; letter-spacing: 0; text-align: center; margin-top: 17px; font-family: Helvetica,Arial,sans-serif; margin-bottom: 15px; color: #000">
+						Thank you !
+					</h3>
+					<div style="margin: 0; padding: 0; font-size: 19px; color: #919191; letter-spacing: 0; font-family: Roboto, Helvetica,Arial,sans-serif">
+						<p style="padding-bottom: 0;" th:text="${ 'Dear '+user.name+',' }">Dear name,</p>
+						<p>Thank you for joining the wait list.</p>
+
+						<p>Your login credentials are:</p>
+						<div style="text-align: center; margin-bottom: 15px;">
+							<p th:text="${ 'Email: '+user.email }">Email: [user email]</p>
+							<p th:text="${ 'Password: '+user.password }">Password: 12345678</p>
+						</div>
+
+						<p>Regards,</p>
+						<p>Swap And Style Team</p>
+					</div>
+
+					<button style="background: #000d14; width: 100%; border: none; padding: 12px; color: #fff; font-size: 18px; font-weight: normal; border-radius: 5px; margin-top: 25px;">
+						<a href="https://swapandstyle.com/" style="color:white">Visit Us</a>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
